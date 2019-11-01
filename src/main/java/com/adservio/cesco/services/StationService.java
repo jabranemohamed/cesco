@@ -14,4 +14,6 @@ public interface StationService {
     void deleteById(Long id);
 
     void delete(Station t);
+
+    boolean exist(Long stationId);
 }

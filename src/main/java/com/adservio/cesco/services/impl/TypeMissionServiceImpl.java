@@ -22,12 +22,12 @@ public class TypeMissionServiceImpl implements TypeMissionService {
 
     @Override
     public TypeMission createTypeMission(TypeMission typeMission) {
-        return null;
+        return typeMissionRepository.save(typeMission);
     }
 
     @Override
     public TypeMission updateTypeMission(TypeMission typeMission) {
-        return null;
+        return typeMissionRepository.save(typeMission);
     }
 
     @Override

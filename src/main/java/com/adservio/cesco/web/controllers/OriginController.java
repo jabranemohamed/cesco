@@ -46,12 +46,10 @@ public class OriginController {
         if (pageNumber == null || pageNumber < 0) {
             pageNumber = DEFAULT_PAGE_NUMBER;
         }
-
         if (pageSize == null || pageSize < 1) {
             pageSize = DEFAULT_PAGE_SIZE;
         }
         Page<OriginMission> pageOfOrigin = originService.findAll(PageRequest.of(pageNumber, pageSize));
-
         return new ResponseEntity<>(pageOfOrigin, HttpStatus.OK);
 
     }
